@@ -16,7 +16,7 @@ for (let r = 1; r <= no_of_row; r++) {
 		// col
 		$(`#wrapper > .row:nth-child(${r})`).append(
 			$("<col>", {
-				class: "p-0 col m-2 bg-light",
+				class: "col p-0 m-2 bg-secondary",
 			})
 		);
 
@@ -25,6 +25,7 @@ for (let r = 1; r <= no_of_row; r++) {
 			$("<img>", {
 				class: "w-100",
 				src: `https://source.unsplash.com/random/${photo_size}x${photo_size}?sig=${++counter}`,
+				// src: `./images/favicon.svg`,
 			})
 		);
 	}
