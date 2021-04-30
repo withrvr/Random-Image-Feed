@@ -1,4 +1,4 @@
-const no_of_row = 4;
+const no_of_row = 3;
 const no_of_col = 3;
 const photo_size = 500;
 let counter = 0;
