@@ -1,4 +1,4 @@
-const no_of_row = 3;
+const no_of_row = 5;
 const no_of_col = 3;
 const photo_size = 500;
 let counter = 0;
@@ -24,7 +24,7 @@ for (let r = 1; r <= no_of_row; r++) {
 		$(`#wrapper > .row:nth-child(${r}) > .col:nth-child(${c})`).append(
 			$("<img>", {
 				class: "w-100",
-				src: `https://source.unsplash.com/random/${photo_size}x${photo_size}?sig=${++counter}`,
+				src: `https://picsum.photos/${photo_size}?random=${++counter}`,
 				// src: `./images/favicon.svg`,
 			})
 		);
