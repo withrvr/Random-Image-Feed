@@ -12,7 +12,6 @@ export default class ImageFeed extends React.Component {
 		return (
 			<>
 				{[...Array(this.props.no_of_col)].map((value, index) => {
-					console.log(counter);
 					return (
 						<div className="col p-0 m-2 bg-secondary" key={index}>
 							<img

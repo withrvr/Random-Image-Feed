@@ -2,9 +2,19 @@ import React from "react";
 import ImageFeed from "./ImageFeed";
 
 export default class App extends React.Component {
+	state = {
+		refresh: 0,
+	};
+
+	handleReload = () => {
+		this.setState({
+			refresh: this.state.refresh + 1,
+		});
+	};
+
 	render() {
 		return (
-			<div className="container text-center col-md-8">
+			<div className="container text-center col-md-6">
 				<h1 className="p-2 m-2">Random Image Feed</h1>
 
 				{/* <!-- MAIN: image feed wrapper --> */}
@@ -23,7 +33,10 @@ export default class App extends React.Component {
 					</div>
 					<div className="col">
 						{/* <!-- href="" ... this also works --> */}
-						<button className="w-100 btn btn-success">
+						<button
+							onClick={this.handleReload}
+							className="w-100 btn btn-success"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="16"
