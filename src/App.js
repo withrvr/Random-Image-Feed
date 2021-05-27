@@ -2,16 +2,6 @@ import React from "react";
 import ImageFeed from "./ImageFeed";
 
 export default class App extends React.Component {
-	state = {
-		refresh: 0,
-	};
-
-	handleReload = () => {
-		this.setState({
-			refresh: this.state.refresh + 1,
-		});
-	};
-
 	render() {
 		return (
 			<div className="container text-center col-md-6">
@@ -34,7 +24,7 @@ export default class App extends React.Component {
 					<div className="col">
 						{/* <!-- href="" ... this also works --> */}
 						<button
-							onClick={this.handleReload}
+							onClick={() => this.setState({})}
 							className="w-100 btn btn-success"
 						>
 							<svg
