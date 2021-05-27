@@ -1,5 +1,5 @@
 import React from "react";
-import RandomImage from "./RandomImage";
+import RandomImageRow from "./RandomImageRow";
 
 export default class ImageFeed extends React.Component {
 	constructor(props) {
@@ -13,7 +13,7 @@ export default class ImageFeed extends React.Component {
 				{[...Array(this.no_of_row)].map((value, index) => {
 					return (
 						<div className="row row-cols" key={index}>
-							<RandomImage no_of_col={this.no_of_col} />
+							<RandomImageRow no_of_col={this.no_of_col} />
 						</div>
 					);
 				})}
