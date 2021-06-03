@@ -1,10 +1,11 @@
 # Random Image Feed
 
 ```
-Shows Random Images in grid format
+Shows Random Images
+In grid format
 Fun Project
 ```
 
 # Result
 
-[https://withrvr.github.io/Random-Image-Feed/](https://withrvr.github.io/Random-Image-Feed/)
+-   [Final Result](https://withrvr.github.io/Random-Image-Feed/)

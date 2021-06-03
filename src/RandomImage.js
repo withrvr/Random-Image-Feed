@@ -18,7 +18,7 @@ export default class RandomImageRow extends React.Component {
 					src={`https://picsum.photos/${
 						this.photo_size
 					}?random=${++counter}`}
-					// src="image.svg"
+					// src={process.env.PUBLIC_URL + "/logo.svg"}
 				/>
 			</div>
 		);
