@@ -2,7 +2,7 @@ import React from "react";
 
 let counter = 0;
 
-export default class RandomImageRow extends React.Component {
+export default class RandomImage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.photo_size = 500;
